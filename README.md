@@ -158,6 +158,23 @@ Local Search nis nga Greedy, kërkon zëvendësime 1-me-2 dhe përdor një short
 
 Puna e ardhshme duhet të fokusohet në optimizim më të fortë për Matching I/II, optimizim të plotë të trajektores dhe dokumentimin e eksperimenteve të përsëritura, përpara se të pretendohet një rezultat konkurrues në renditjen e kombinuar.
 
+### Advanced Trajectory Matching — Verified result
+
+We implemented a trajectory search using initial trajectory
+estimates, mid-course corrections, and numerical refinement.
+
+The best verified candidate achieved:
+- Official ESA fitness: -194.04892254026709
+- Total delta-v: 6022.4 m/s
+- Transfer duration: 3 days
+- Arrival position error: approximately 0 km
+
+The final solution was independently evaluated with the
+official ESA fitness function and saved as:
+results/best_trajectory-matching.json
+
+This confirms one valid Advanced delivery, but does not
+establish a leaderboard ranking.
 ### 10. Conclusions
 Në këtë projekt u implementuan dhe u krahasuan algoritmet Random Search, Greedy dhe Local Search për problemin Luna Tomato Logistics të ESA-s.
 

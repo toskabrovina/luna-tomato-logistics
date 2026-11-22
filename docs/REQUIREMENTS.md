@@ -14,7 +14,7 @@ Tick a box (`[x]`) only when it is done **and** verified. `python tasks.py check
 - [x] Greedy by weight (sort transfers, add if no conflict)
 - [x] Improvement method (local search with 1-swap / 2-swap, simulated annealing or tabu)
 - [x] Upper bound for comparison (e.g. LP relaxation or best 2D matching) to measure the optimality gap
-- [ ] (Optional) Advanced trajectory-matching problem
+- [x] (Optional) Advanced trajectory-matching problem
 - [x] At least one idea designed or modified by us (documented in DECISIONS.md)
 
 ## Analysis
@@ -25,12 +25,12 @@ Tick a box (`[x]`) only when it is done **and** verified. `python tasks.py check
 
 ## Experiments
 - [x] Metrics recorded: fitness, runtime, peak memory, fitness evaluations <!-- auto:metrics -->
-- [ ] Results on every problem instance
+- [x] Results on every problem instance
 - [x] Algorithm comparison table
 - [x] Convergence plot (best fitness over time) per problem
 - [x] Theory vs measured performance (scaling discussion)
 
 ## Delivery
-- [ ] Submission JSON per problem, checked with the official fitness function
+- [x] Submission JSON per problem, checked with the official fitness function
 - [x] README report complete (all sections filled)
 - [ ] Defense preparation: can explain every algorithm and design decision
