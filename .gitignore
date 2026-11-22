@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+data/
+results/
+CONTEXT.md
+.env
+.env.*
+*.pem
+*.key
+!.env.example
+official/
+venv/
+.venv/

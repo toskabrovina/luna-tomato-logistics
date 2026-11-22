@@ -1,0 +1,554 @@
+{
+  "_about": "VSI project catalog. kind: 'esa' = ESA SpOC challenge (data + official scorer from ESA), 'custom' = written brief from the professor. verified: the source page was read and PROBLEM.md reflects it. Agents: find the student's project here by title/aliases, then run `vsi new <slug> <dir>`.",
+  "projects": [
+    {
+      "slug": "torso-decompositions",
+      "title": "Torso Decompositions",
+      "kind": "esa",
+      "series": "SpOC 3",
+      "source": "https://optimise.esa.int/challenge/spoc-3-torso-decompositions/About",
+      "official_repo": "https://github.com/esa/SpOC3",
+      "verified": true,
+      "aliases": [
+        "torso",
+        "tree decomposition",
+        "elimination ordering",
+        "treewidth",
+        "spoc3 torso"
+      ],
+      "summary": "Bi-objective graph problem: choose a vertex ordering + threshold t to maximise torso size and minimise torso width (fill-in out-degree). Submit up to 20 vectors, scored by hypervolume.",
+      "starter": "esa",
+      "challenge_id": "spoc-3-torso-decompositions",
+      "problem_ids": [
+        "small-graph",
+        "medium-graph",
+        "large-graph"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc3/torso/easy.gr",
+        "https://api.optimize.esa.int/data/spoc3/torso/medium.gr",
+        "https://api.optimize.esa.int/data/spoc3/torso/hard.gr"
+      ],
+      "udp": {
+        "small-graph": "https://api.optimize.esa.int/media/problems/spoc-3-torso-decompositions-small-graph-1711380312223.py",
+        "medium-graph": "https://api.optimize.esa.int/media/problems/spoc-3-torso-decompositions-medium-graph-1711380328535.py",
+        "large-graph": "https://api.optimize.esa.int/media/problems/spoc-3-torso-decompositions-large-graph-1711380341869.py"
+      },
+      "requires": [
+        "numpy",
+        "matplotlib",
+        "torch",
+        "loguru",
+        "pygmo"
+      ]
+    },
+    {
+      "slug": "interferometric-mission",
+      "title": "Interferometric Mission",
+      "kind": "esa",
+      "series": "SpOC 3",
+      "source": "https://optimise.esa.int/challenge/spoc-3-interferometric-mission/About",
+      "official_repo": "https://github.com/esa/SpOC3",
+      "verified": true,
+      "aliases": [
+        "interferometric",
+        "interferometry",
+        "telescope",
+        "spoc3 interferometric"
+      ],
+      "summary": "Choose relative initial position/velocity of N satellites around a mothership so their projections form as many distinct baselines as possible at 3 times (Golomb-like). Single-objective, continuous.",
+      "starter": "esa",
+      "challenge_id": "spoc-3-interferometric-mission",
+      "problem_ids": [
+        "tiny-observatory-in-dro",
+        "large-observatory-in-dro",
+        "large-observatory-in-halo"
+      ],
+      "udp": {
+        "tiny-observatory-in-dro": "https://api.optimize.esa.int/media/problems/spoc-3-interferometric-mission-tiny-observatory-in-dro-1711466574922.py",
+        "large-observatory-in-dro": "https://api.optimize.esa.int/media/problems/spoc-3-interferometric-mission-large-observatory-in-dro-1711466585914.py",
+        "large-observatory-in-halo": "https://api.optimize.esa.int/media/problems/spoc-3-interferometric-mission-large-observatory-in-halo-1711466594360.py"
+      },
+      "requires": [
+        "heyoka==3.2.0",
+        "pygmo",
+        "numpy",
+        "scipy",
+        "pillow",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "programmable-cubes",
+      "title": "Programmable Cubes",
+      "kind": "esa",
+      "series": "SpOC 3",
+      "source": "https://optimise.esa.int/challenge/spoc-3-programmable-cubes/About",
+      "official_repo": "https://github.com/esa/SpOC3",
+      "verified": true,
+      "aliases": [
+        "cubes",
+        "programmable matter",
+        "reconfiguration",
+        "spoc3 cubes"
+      ],
+      "summary": "Reconfigure an ensemble of cubes into a target spacecraft (ISS, JWST, Enterprise) with a short sequence of legal pivot moves. Combinatorial planning.",
+      "starter": "esa",
+      "challenge_id": "spoc-3-programmable-cubes",
+      "problem_ids": [
+        "iss",
+        "jwst",
+        "enterprise"
+      ],
+      "udp": {
+        "iss": "https://api.optimize.esa.int/media/problems/spoc-3-programmable-cubes-iss-1737044022682.py",
+        "jwst": "https://api.optimize.esa.int/media/problems/spoc-3-programmable-cubes-jwst-1737044036375.py",
+        "enterprise": "https://api.optimize.esa.int/media/problems/spoc-3-programmable-cubes-enterprise-1737043826459.py"
+      },
+      "requires": [
+        "numba",
+        "numpy",
+        "matplotlib"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc3/cubes/CubeMoveset.py",
+        "https://api.optimize.esa.int/data/spoc3/cubes/problems/ISS.json",
+        "https://api.optimize.esa.int/data/spoc3/cubes/problems/JWST.json",
+        "https://api.optimize.esa.int/data/spoc3/cubes/problems/Enterprise.json",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/ISS/Initial_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/ISS/Initial_Cube_Types.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/ISS/Target_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/ISS/Target_Cube_Types.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/JWST/Initial_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/JWST/Initial_Cube_Types.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/JWST/Target_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/JWST/Target_Cube_Types.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/Enterprise/Initial_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/Enterprise/Initial_Cube_Types.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/Enterprise/Target_Config.npy",
+        "https://api.optimize.esa.int/data/spoc3/cubes/data/Enterprise/Target_Cube_Types.npy"
+      ]
+    },
+    {
+      "slug": "luna-tomato-logistics",
+      "title": "Luna Tomato Logistics",
+      "kind": "esa",
+      "series": "SpOC 4",
+      "source": "https://optimise.esa.int/challenge/spoc-4-luna-tomato-logistics/About",
+      "official_repo": "https://github.com/esa/SpOC4",
+      "verified": true,
+      "aliases": [
+        "luna logistics",
+        "tomato logistics",
+        "lunar logistics",
+        "spoc4 logistics"
+      ],
+      "summary": "Maximum-weight 3-dimensional matching of Earth orbit -> Moon orbit -> destination transfers (NP-hard), plus an advanced trajectory-design version.",
+      "starter": "esa",
+      "challenge_id": "spoc-4-luna-tomato-logistics",
+      "problem_ids": [
+        "matching-i",
+        "matching-ii",
+        "trajectory-matching"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc4/ltl/random_harder_5000.txt",
+        "https://api.optimize.esa.int/data/spoc4/ltl/random_hard_10000.txt",
+        "https://api.optimize.esa.int/data/spoc4/ltl/Earth_orbits.txt",
+        "https://api.optimize.esa.int/data/spoc4/ltl/Moon_orbits.txt",
+        "https://api.optimize.esa.int/data/spoc4/ltl/LTL.txt"
+      ],
+      "udp": {
+        "matching-i": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-matching-i-1774534213771.py",
+        "matching-ii": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-matching-ii-1774534892574.py",
+        "trajectory-matching": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-trajectory-matching-1776442888561.py"
+      },
+      "requires": [
+        "numpy",
+        "pykep",
+        "heyoka"
+      ]
+    },
+    {
+      "slug": "luna-tomato-advertising",
+      "title": "Luna Tomato Advertising",
+      "kind": "esa",
+      "series": "SpOC 4",
+      "source": "https://optimise.esa.int/challenge/spoc-4-luna-tomato-advertising/About",
+      "official_repo": "https://github.com/esa/SpOC4",
+      "verified": true,
+      "aliases": [
+        "luna advertising",
+        "tomato advertising",
+        "spoc4 advertising"
+      ],
+      "summary": "Select orbits and phases for spacecraft whose lunar occultations reproduce a Morse-code signal (MSE <= 0.05) with as few spacecraft as possible.",
+      "starter": "esa",
+      "challenge_id": "spoc-4-luna-tomato-advertising",
+      "problem_ids": [
+        "tie-breaker"
+      ],
+      "udp": {
+        "tie-breaker": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-advertising-tie-breaker-1774861966944.py"
+      },
+      "requires": [
+        "numpy",
+        "heyoka",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "keplerian-tomato-tsp",
+      "title": "Keplerian Tomato Traveling Salesperson",
+      "kind": "esa",
+      "series": "SpOC 4",
+      "source": "https://optimise.esa.int/challenge/spoc-4-keplerian-tomato-traveling-salesperson/About",
+      "official_repo": "https://github.com/esa/SpOC4",
+      "verified": true,
+      "aliases": [
+        "keplerian",
+        "tomato tsp",
+        "traveling salesperson",
+        "orbital tsp",
+        "spoc4 tsp"
+      ],
+      "summary": "Time-dependent TSP around the Moon: visit all tomato orbits with Lambert transfers under a delta-v limit, minimising total mission time.",
+      "starter": "esa",
+      "challenge_id": "spoc-4-keplerian-tomato-traveling-salesperson",
+      "problem_ids": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc4/kttsp/problems/easy.kttsp",
+        "https://api.optimize.esa.int/data/spoc4/kttsp/problems/medium.kttsp",
+        "https://api.optimize.esa.int/data/spoc4/kttsp/problems/hard.kttsp"
+      ],
+      "udp": {
+        "small": "https://api.optimize.esa.int/media/problems/spoc-4-keplerian-tomato-traveling-salesperson-small-1782203910047.py",
+        "medium": "https://api.optimize.esa.int/media/problems/spoc-4-keplerian-tomato-traveling-salesperson-medium-1782203984713.py",
+        "large": "https://api.optimize.esa.int/media/problems/spoc-4-keplerian-tomato-traveling-salesperson-large-1782204009564.py"
+      },
+      "requires": [
+        "numpy",
+        "pykep<3",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "morphing-rovers",
+      "title": "Morphing Rovers",
+      "kind": "esa",
+      "series": "SpOC 2",
+      "source": "https://optimise.esa.int/challenge/spoc-2-morphing-rovers/About",
+      "official_repo": "https://github.com/esa/SpOC2",
+      "verified": true,
+      "aliases": [
+        "rovers",
+        "morphing",
+        "rover",
+        "spoc2 rovers"
+      ],
+      "summary": "Design 4 rover terrain masks + a neural-network controller (19 133 parameters) so rovers reach 30 samples on 6 Mars maps as fast as possible.",
+      "starter": "esa",
+      "challenge_id": "spoc-2-morphing-rovers",
+      "problem_ids": [
+        "morphing-rovers"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc2/morphing/coordinates.txt",
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map1.jpg",
+          "file": "spoc2/morphing/Maps/Map1.JPG"
+        },
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map2.JPG",
+          "file": "spoc2/morphing/Maps/Map2.JPG"
+        },
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map3.JPG",
+          "file": "spoc2/morphing/Maps/Map3.JPG"
+        },
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map4.JPG",
+          "file": "spoc2/morphing/Maps/Map4.JPG"
+        },
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map5.JPG",
+          "file": "spoc2/morphing/Maps/Map5.JPG"
+        },
+        {
+          "url": "https://api.optimize.esa.int/data/spoc2/morphing/Maps/Map6.jpg",
+          "file": "spoc2/morphing/Maps/Map6.JPG"
+        }
+      ],
+      "udp": {
+        "morphing-rovers": "https://api.optimize.esa.int/media/problems/spoc-2-morphing-rovers-morphing-rovers-1681397490623.py"
+      },
+      "requires": [
+        "numpy",
+        "imageio",
+        "torch",
+        "torchvision",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "quantum-communications-constellations",
+      "title": "Quantum Communications Constellations",
+      "kind": "esa",
+      "series": "SpOC 2",
+      "source": "https://optimise.esa.int/challenge/spoc-2-quantum-communications-constellations/About",
+      "official_repo": "https://github.com/esa/SpOC2",
+      "verified": true,
+      "aliases": [
+        "quantum",
+        "constellations",
+        "satellites",
+        "qkd",
+        "spoc2 quantum"
+      ],
+      "summary": "Bi-objective: design two Walker constellations + choose 4 rover sites to minimise quantum-link cost and constellation cost; scored by hypervolume.",
+      "starter": "esa",
+      "challenge_id": "spoc-2-quantum-communications-constellations",
+      "problem_ids": [
+        "quantum-communications-constellations"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc2/constellations/rovers.txt"
+      ],
+      "udp": {
+        "quantum-communications-constellations": "https://api.optimize.esa.int/media/problems/spoc-2-quantum-communications-constellations-quantum-communications-constellatio_BpXhIVq.py"
+      },
+      "requires": [
+        "pykep",
+        "pygmo",
+        "numpy",
+        "scipy",
+        "matplotlib",
+        "seaborn",
+        "sgp4",
+        "networkx"
+      ]
+    },
+    {
+      "slug": "trappist-tour",
+      "title": "Trappist Tour",
+      "kind": "esa",
+      "series": "SpOC 1 (GECCO 2022)",
+      "source": "https://optimise.esa.int/challenge/spoc-trappist-tour/About",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "trappist",
+        "trappist-1",
+        "tour",
+        "spoc trappist"
+      ],
+      "summary": "Bi-objective trajectory: visit all 7 TRAPPIST-1 planets once, minimising total delta-v and mission time; scored by hypervolume.",
+      "starter": "esa",
+      "challenge_id": "spoc-trappist-tour",
+      "problem_ids": [
+        "trappist-tour"
+      ],
+      "udp": {
+        "trappist-tour": "https://api.optimize.esa.int/media/problems/spoc-trappist-tour-trappist-tour-1679042673855.py"
+      },
+      "requires": [
+        "numpy",
+        "pykep",
+        "pygmo",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "delivery-scheduling",
+      "title": "Delivery Scheduling",
+      "kind": "esa",
+      "series": "SpOC 1 (GECCO 2022)",
+      "source": "https://optimise.esa.int/challenge/spoc-delivery-scheduling/About",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "delivery",
+        "scheduling",
+        "spoc delivery"
+      ],
+      "summary": "Purely combinatorial: assign 340 asteroids to 12 stations with non-overlapping activity windows to maximise the minimum delivered mass.",
+      "starter": "esa",
+      "challenge_id": "spoc-delivery-scheduling",
+      "problem_ids": [
+        "delivery-scheduling"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc/scheduling/candidates.txt"
+      ],
+      "udp": {
+        "delivery-scheduling": "https://api.optimize.esa.int/media/problems/spoc-delivery-scheduling-delivery-scheduling-1679475416464.py"
+      },
+      "requires": [
+        "numpy",
+        "matplotlib"
+      ]
+    },
+    {
+      "slug": "mining",
+      "title": "Mining",
+      "kind": "esa",
+      "series": "SpOC 1 (GECCO 2022)",
+      "source": "https://optimise.esa.int/challenge/spoc-mining/About",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "asteroid mining",
+        "spoc mining"
+      ],
+      "summary": "Route a ship through a 10 000-asteroid belt for 1 827 days with limited propellant, maximising the scarcest of three prepared materials.",
+      "starter": "esa",
+      "challenge_id": "spoc-mining",
+      "problem_ids": [
+        "mine-the-belt"
+      ],
+      "data": [
+        "https://api.optimize.esa.int/data/spoc/mining/candidates.txt"
+      ],
+      "udp": {
+        "mine-the-belt": "https://api.optimize.esa.int/media/problems/spoc-mining-mine-the-belt-1679404403080.py"
+      },
+      "requires": [
+        "numpy",
+        "pykep"
+      ]
+    },
+    {
+      "slug": "trigger-arc-tsp",
+      "title": "The Trigger Arc TSP",
+      "kind": "custom",
+      "series": null,
+      "source": null,
+      "official_repo": null,
+      "verified": false,
+      "aliases": [
+        "trigger arc",
+        "tatsp",
+        "trigger tsp"
+      ],
+      "summary": "TSP variant where traversing some arcs (triggers) changes the cost of other arcs. The assignment gave no link: ask the professor for the official problem statement and instances.",
+      "starter": "generic"
+    },
+    {
+      "slug": "dna-genome-reconstruction",
+      "title": "DNA Genome Reconstruction from Noisy Sequencing Reads",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "dna",
+        "genome",
+        "assembly",
+        "sequencing reads",
+        "overlap graph",
+        "k-mer"
+      ],
+      "summary": "Reconstruct a DNA sequence from short noisy reads: k-mer indexing, approximate overlaps, overlap graph, assembly, error correction, variant detection, scalability.",
+      "starter": "dna"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "title": "AI-Based Protein Structure Prediction and Optimization",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "protein",
+        "folding",
+        "amino acid",
+        "hp model",
+        "structure prediction"
+      ],
+      "summary": "Fold an amino-acid sequence on a 2D/3D lattice minimising an energy function; at least two search algorithms (GA, SA, beam, B&B…), search-space reduction, local improvement, experiments.",
+      "starter": "protein"
+    },
+    {
+      "slug": "chronos-nexus",
+      "title": "Chronos Nexus: Autonomous Interstellar Civilization Optimization",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "chronos",
+        "nexus",
+        "galaxy",
+        "interstellar",
+        "civilization",
+        "planets"
+      ],
+      "summary": "Dynamic galaxy graph: multi-objective routing, resource allocation (flow), mission scheduling, infrastructure (knapsack), dynamic re-planning, prediction, uncertainty; ≥3 techniques; report as GitHub README.",
+      "starter": "chronos"
+    },
+    {
+      "slug": "multi-robot-coordination",
+      "title": "AI-Powered Multi-Robot Coordination in Dynamic Environments",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "robots",
+        "multi-robot",
+        "reinforcement learning",
+        "marl",
+        "ppo",
+        "rrt"
+      ],
+      "summary": "Robots on a dynamic grid: multi-agent RL (MADQL/PPO), online path planning (A*/RRT*), auction-based task allocation, priority handling, simulation with moving obstacles.",
+      "starter": "robots"
+    },
+    {
+      "slug": "time-travel-paradox",
+      "title": "Time Travel Paradox Detection and Timeline Optimization",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "time travel",
+        "paradox",
+        "timeline",
+        "causal",
+        "cycles"
+      ],
+      "summary": "Events as a directed graph with time-travel back edges: detect causal cycles (DFS/SCC/topological sort), identify paradoxes, find a minimum-cost repair, compare approaches.",
+      "starter": "timetravel"
+    },
+    {
+      "slug": "traffic-flow-optimization",
+      "title": "Traffic Flow Optimization in a City Grid Using Dijkstra and A*",
+      "kind": "custom",
+      "series": null,
+      "source": "professor brief (see PROBLEM.md)",
+      "official_repo": null,
+      "verified": true,
+      "aliases": [
+        "traffic",
+        "city grid",
+        "dijkstra",
+        "a*",
+        "astar",
+        "routing",
+        "congestion"
+      ],
+      "summary": "Weighted city grid with traffic delays: Dijkstra and A* fastest routes, dynamic edge-weight updates from congestion data.",
+      "starter": "traffic"
+    }
+  ]
+}

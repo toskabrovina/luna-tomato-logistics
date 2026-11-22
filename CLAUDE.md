@@ -1,0 +1,2 @@
+<!-- vsi:generated -->
+@AGENTS.md

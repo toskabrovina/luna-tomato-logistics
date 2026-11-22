@@ -1,0 +1,30 @@
+{
+  "slug": "luna-tomato-logistics",
+  "title": "Luna Tomato Logistics",
+  "kind": "esa",
+  "source": "https://optimise.esa.int/challenge/spoc-4-luna-tomato-logistics/About",
+  "summary": "Maximum-weight 3-dimensional matching of Earth orbit -> Moon orbit -> destination transfers (NP-hard), plus an advanced trajectory-design version.",
+  "challenge_id": "spoc-4-luna-tomato-logistics",
+  "problem_ids": [
+    "matching-i",
+    "matching-ii",
+    "trajectory-matching"
+  ],
+  "data": [
+    "https://api.optimize.esa.int/data/spoc4/ltl/random_harder_5000.txt",
+    "https://api.optimize.esa.int/data/spoc4/ltl/random_hard_10000.txt",
+    "https://api.optimize.esa.int/data/spoc4/ltl/Earth_orbits.txt",
+    "https://api.optimize.esa.int/data/spoc4/ltl/Moon_orbits.txt",
+    "https://api.optimize.esa.int/data/spoc4/ltl/LTL.txt"
+  ],
+  "udp": {
+    "matching-i": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-matching-i-1774534213771.py",
+    "matching-ii": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-matching-ii-1774534892574.py",
+    "trajectory-matching": "https://api.optimize.esa.int/media/problems/spoc-4-luna-tomato-logistics-trajectory-matching-1776442888561.py"
+  },
+  "requires": [
+    "numpy",
+    "pykep",
+    "heyoka"
+  ]
+}

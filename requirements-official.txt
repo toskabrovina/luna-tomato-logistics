@@ -1,0 +1,6 @@
+# Packages needed by the official ESA evaluation code (official/*.py).
+# pykep / pygmo / heyoka install most easily with conda + Python 3.11:
+#   conda install -c conda-forge pykep pygmo heyoka
+numpy
+pykep
+heyoka

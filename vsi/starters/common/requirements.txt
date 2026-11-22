@@ -1,0 +1,3 @@
+# VSI itself is the vsi/ folder in this project: nothing to install for it.
+matplotlib>=3.8
+pytest>=8.0
